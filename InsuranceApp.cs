@@ -113,16 +113,16 @@ namespace InsuranceAppConsole
 
                 if (radekChyby == -1)
                 {
-                    radekChyby = Console.CursorTop; // Získáme aktuální pozici kurzoru
+                    radekChyby = Console.CursorTop; 
                 }
 
-                Console.SetCursorPosition(0, radekChyby); // Nastavíme kurzor na řádek chyby
-                Console.Write(new string(' ', Console.WindowWidth - 1)); // Smazání řádku chyby
+                Console.SetCursorPosition(0, radekChyby); 
+                Console.Write(new string(' ', Console.WindowWidth - 1)); 
                 Console.SetCursorPosition(0, radekChyby); 
 
-                Console.ForegroundColor = ConsoleColor.Green; // Změní barvu textu na zelenou pro nápovědu
+                Console.ForegroundColor = ConsoleColor.Green; 
                 Console.Write("Zvolte akci: ");
-                Console.ForegroundColor = ConsoleColor.White; // Vrátí barvu textu zpět na bílou
+                Console.ForegroundColor = ConsoleColor.White;
 
                 while (!int.TryParse(Console.ReadLine(), out volba) || volba < 0 || volba > 3)
                 {
@@ -134,10 +134,10 @@ namespace InsuranceAppConsole
                     Console.WriteLine("Neplatný vstup. Zadejte platné číslo volby.");
                     Console.ForegroundColor = ConsoleColor.White; 
 
-                    System.Threading.Thread.Sleep(1000); // Počkej 2 sekundy
+                    System.Threading.Thread.Sleep(1000); 
 
-                    Console.SetCursorPosition(0, radekChyby); // Nastavíme kurzor na řádek chyby
-                    Console.Write(new string(' ', Console.WindowWidth - 1)); // Smazání řádku chyby
+                    Console.SetCursorPosition(0, radekChyby); 
+                    Console.Write(new string(' ', Console.WindowWidth - 1)); 
                     Console.SetCursorPosition(0, radekChyby); 
 
                     Console.ForegroundColor = ConsoleColor.Green;
