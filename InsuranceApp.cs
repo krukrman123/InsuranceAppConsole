@@ -48,7 +48,6 @@ namespace InsuranceAppConsole
             } while (volba != 0);
         }
 
-        //---------------------------------------------------------------------
 
 
         /// <summary>
@@ -93,7 +92,6 @@ namespace InsuranceAppConsole
             CekatNaStiskKlavesy();
         }
 
-        //-----------------------------------------------------------------------
 
 
         /// <summary>
@@ -128,11 +126,11 @@ namespace InsuranceAppConsole
 
                 while (!int.TryParse(Console.ReadLine(), out volba) || volba < 0 || volba > 3)
                 {
-                    Console.SetCursorPosition(0, radekChyby); // Nastavíme kurzor na řádek chyby
-                    Console.Write(new string(' ', Console.WindowWidth - 1)); // Smazání řádku chyby
+                    Console.SetCursorPosition(0, radekChyby); 
+                    Console.Write(new string(' ', Console.WindowWidth - 1)); 
                     Console.SetCursorPosition(0, radekChyby); 
 
-                    Console.ForegroundColor = ConsoleColor.Red; // Změní barvu textu na červenou
+                    Console.ForegroundColor = ConsoleColor.Red; 
                     Console.WriteLine("Neplatný vstup. Zadejte platné číslo volby.");
                     Console.ForegroundColor = ConsoleColor.White; 
 
@@ -142,9 +140,9 @@ namespace InsuranceAppConsole
                     Console.Write(new string(' ', Console.WindowWidth - 1)); // Smazání řádku chyby
                     Console.SetCursorPosition(0, radekChyby); 
 
-                    Console.ForegroundColor = ConsoleColor.Green; // Změní barvu textu na zelenou pro nápovědu
+                    Console.ForegroundColor = ConsoleColor.Green;
                     Console.Write("Zvolte akci: ");
-                    Console.ForegroundColor = ConsoleColor.White; // Vrátí barvu textu zpět na bílou
+                    Console.ForegroundColor = ConsoleColor.White;
                 }
 
             } while (volba < 0 || volba > 3); 
@@ -183,7 +181,6 @@ namespace InsuranceAppConsole
 
 
 
-        //-----------------------------------------------------------------------
 
 
 
@@ -278,7 +275,6 @@ namespace InsuranceAppConsole
         }
 
 
-        //-----------------------------------------------------------------------
 
 
 
